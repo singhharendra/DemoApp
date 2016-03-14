@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonfragone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Button1" />
+
+            <Button
+                android:id="@+id/buttonfragtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Button2" />
+
+            <Button
+                android:id="@+id/buttonfragthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Button3" />
+
+            <Button
+                android:id="@+id/buttonfragfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Button4" />
+
+            <Button
+                android:id="@+id/buttonfragfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Button5" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:id="@+id/relviewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+        <fragment
+            android:name="com.example.harendra.mydemoapp.FragmentOne"
+            android:id="@+id/fragment_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_one" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/reltextitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        >
+        <TextView
+            android:id="@+id/textitemone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView1"
+            />
+
+        <TextView
+            android:id="@+id/textitemtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:text="TextView2"
+           />
+
+        <TextView
+            android:id="@+id/textitemthree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:text="TextView3"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reltextselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            >
+            <TextView
+                android:id="@+id/seltedtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView1"
+                />
+        </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/relcolview"
+    android:layout_width="match_parent"
+    android:layout_marginTop="100dp"
+    android:layout_height="wrap_content">
+<Button
+    android:id="@+id/buttoncolorone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="onClick"
+    android:text="@string/color_one"/>
+
+    <Button
+        android:id="@+id/buttoncolortwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/buttoncolorone"
+        android:onClick="onClick"
+        android:text="@string/color_two"/>
+    <Button
+        android:id="@+id/buttoncolorthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:layout_toRightOf="@+id/buttoncolortwo"
+        android:text="@string/color_three"/>
+</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relmove"
+            android:layout_width="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonmove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:onClick="onClick"
+                android:text="MoveToNext"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

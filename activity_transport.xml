@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/relitems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+         >
+        <Spinner
+            android:id="@+id/spinnerNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/reltextview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/textViewMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mode of TransPort"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/reltexvehtype"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/textcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Car:"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reltrain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/texttrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Train:"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+             />
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/relNavbutton"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp">
+        <Button
+            android:id="@+id/buttonNavigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_centerInParent="true"
+            android:text="Navigate" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/textlatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Latitude" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellongi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:id="@+id/textlongi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Longitude"
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relMapfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Longitude"
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+
